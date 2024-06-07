@@ -3,6 +3,8 @@ As a data analyst in a startup delivery company in Accra-Ghana, my task is to cr
 The database should contain basic employee details and the branches and clients they work and relate with.
 */
 
+-- CREATING A DATABASE FOR THE TABLES
+CREATE DATABASE Company_DB
 
 CREATE TABLE Employee(
     emp_id SERIAL PRIMARY KEY,
@@ -62,7 +64,7 @@ WHERE birth_date LIKE '2000%';  -- displays employees born in 2000 (LIKE OPERATO
 
 
 CREATE TABLE Branch(
-	branch_id INT PRIMARY KEY,
+    branch_id INT PRIMARY KEY,
     branch_name VARCHAR(20), 
     mgr_id INT,
     mgr_start_date DATE
@@ -88,7 +90,7 @@ SELECT * FROM Branch;
 
 
 CREATE TABLE Client(
-	client_id SERIAL PRIMARY KEY,
+    client_id SERIAL PRIMARY KEY,
     client_name VARCHAR(30),
     branch_id INT
     -- CONSTRAINT FK_ClientBranch FOREIGN KEY(branch_id) REFERENCES Branch(branch_id)
@@ -117,7 +119,7 @@ END;
 
 
 CREATE TABLE Works_With(
-	emp_id INT,
+    emp_id INT,
     client_id INT,
     total_sales INT,
     PRIMARY KEY(emp_id,client_id)
@@ -148,7 +150,7 @@ FOREIGN KEY(emp_id) REFERENCES Employee(emp_id);     */
 
 
 CREATE TABLE Branch_Supplier(
-	branch_id INT,
+    branch_id INT,
     supplier_name VARCHAR(30),
     supply_type VARCHAR(30),
     PRIMARY KEY(branch_id,supplier_name)

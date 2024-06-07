@@ -1,3 +1,9 @@
+/* PROJECT IN MYSQL  
+As a data analyst in a startup supplier company in Accra-Ghana, my task is to create a simple database for current employees, branches, clients and supply types.
+The database should contain basic employee details and the branches and clients they work and relate with.
+*/
+
+
 CREATE TABLE Employee(
 	emp_id SERIAL PRIMARY KEY,
     first_name VARCHAR(20) NOT NULL,

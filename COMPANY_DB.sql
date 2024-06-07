@@ -1,5 +1,5 @@
 /* PROJECT IN MYSQL  
-As a data analyst in a startup delivery company in Accra-Ghana, my task is to create a simple database for current employees, branches, clients and delivery types.
+As a data analyst in a startup delivery company in Accra-Ghana, my task is to create a simple database for current employees, branches, clients, supply and delivery types.
 The database should contain basic employee details and the branches and clients they work and relate with.
 */
 

@@ -4,7 +4,7 @@ The database should contain basic employee details and the branches and clients 
 */
 
 -- CREATING A DATABASE FOR THE TABLES
-CREATE DATABASE Company_DB
+CREATE DATABASE Company_DB;
 
 CREATE TABLE Employee(
     emp_id SERIAL PRIMARY KEY,
